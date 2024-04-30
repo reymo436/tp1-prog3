@@ -1,0 +1,26 @@
+###
+POST http://localhost:9000/api/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "joaquin gonzales",
+    "age": 30,
+    "email":"joacogonz@gmail.com"
+}
+
+###
+GET http://localhost:9000/api/users HTTP/1.1
+
+###
+GET http://localhost:9000/api/users/6630254ad406e8855db69483 HTTP/1.1
+###
+PUT http://localhost:9000/api/users/663027bc76af3e6afda7ec42 HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "joaquin gonzales",
+    "age": 29,
+    "email":"joacogonz@gmail.com"
+}
+###
+DELETE http://localhost:9000/api/users/663027bc76af3e6afda7ec42 HTTP/1.1
